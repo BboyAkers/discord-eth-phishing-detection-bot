@@ -4,15 +4,20 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
+    "start:build": "tsc -w",
+    "start:run": "nodemon server.js",
+    "start": "concurrently npm:start:*"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@emnudge/domyno": "0.0.1",
+    "@types/node": "^14.14.10",
+    "concurrently": "^5.3.0",
     "discord.js": "^12.1.1",
     "dotenv": "^8.2.0",
-    "eth-phishing-detect": "^1.1.14"
+    "eth-phishing-detect": "^1.1.14",
+    "typescript": "^4.1.2"
   },
   "devDependencies": {
     "nodemon": "^2.0.6"
