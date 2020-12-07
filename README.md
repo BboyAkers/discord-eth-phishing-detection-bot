@@ -9,8 +9,8 @@
   - [Twitter](https://twitter.com/LaQuasiCinque)
   
 ## Overview
-This bot is designed to block unsafe urls from weird people in blockchain community discord channels. This bot is designed to do several things:
-1.  Monitor chats to see if known malicious urls are being posted in channels.(It uses [Eth Phishing Detect](https://github.com/MetaMask/eth-phishing-detect) by [MetaMask](https://github.com/MetaMask) to check the urls.
+This bot is designed to block unsafe urls from weird people in blockchain community discord channels. The bot will:
+1.  Monitor chats for urls that being posted in channels. It will then check to see if the site is a known phishing url to ethereum users. (It uses [Eth Phishing Detect](https://github.com/MetaMask/eth-phishing-detect) by [MetaMask](https://github.com/MetaMask) to check the urls.
 2.  If url(s) are found it'll delete the message(needs to have a role that allows the bot to delete messages) and send the information regarding the malicous message to the desired channel for admins to determe the fate fo the user.
 
 ## Information bot sends to desired channel
