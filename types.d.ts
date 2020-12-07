@@ -23,8 +23,21 @@ declare module "eth-phishing-detect" {
 declare module "@emnudge/domyno/pipeable" {
   export const map: <T,U>(callback:(item:T,index:number) => U)=> (iter: Iterable<T>) => IterableIterator<U>
   export const filter: <T>(callback:(item:T,index:number) => unknown)=> (iter: Iterable<T>) => IterableIterator<T>
+  export const some: <T>(callback:(item:T,index:number) => unknown)=> (iter: Iterable<T>) => boolean
 }
 
 declare module "@emnudge/domyno" {
   export const pipe: <Input,Output>(...args: PipeInput<Input,Output>) => (input: Input) => Output
+}
+
+declare module "process" {
+  global {
+    namespace NodeJS {
+      interface ProcessEnv {
+          SERVER_ID: string,
+          ADMIN_CHANNEL_ID: string,
+      }
+    }
+  }
+  
 }
