@@ -1,5 +1,15 @@
 # discord-eth-phishing-detection-bot
-Blocking unsafe urls from weird people in blockchain community discord channels. This bot is designed to do several things:
+
+## Contributors
+- Austin Akers
+  - [Github](https://github.com/BboyAkers)
+  - [Twitter](https://twitter.com/tweetmonster999)
+- Adam Dorling 
+  - [Github](https://github.com/laquasicinque)
+  - [Twitter](https://twitter.com/LaQuasiCinque)
+  
+## Overview
+This bot is designed to block unsafe urls from weird people in blockchain community discord channels. This bot is designed to do several things:
 1.  Monitor chats to see if known malicious urls are being posted in channels.(It uses [Eth Phishing Detect](https://github.com/MetaMask/eth-phishing-detect) by [MetaMask](https://github.com/MetaMask) to check the urls.
 2.  If url(s) are found it'll delete the message(needs to have a role that allows the bot to delete messages) and send the information regarding the malicous message to the desired channel for admins to determe the fate fo the user.
 
@@ -31,3 +41,4 @@ ADMIN_CHANNEL_ID= //insert channel id of the admin channel or prefered channel t
 `npm run start`
 
 You now have a bot that'll detect known phishing urls and delete them!
+--
