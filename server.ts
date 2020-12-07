@@ -82,7 +82,5 @@ bot.on('message', msg => {
         ]
       }))
     }
-  } else {
-    console.log('message does not contain any urls')
   }
 })
